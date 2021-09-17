@@ -1,15 +1,44 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplify-staging-223115-authRole",
-      "UnauthRoleArn": "arn:aws:iam::866236846393:role/amplify-amplify-staging-223115-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::866236846393:role/amplify-amplify-staging-223115-authRole",
+      "AuthRoleName": "amplify-amplifyapp-dev-121239-authRole",
+      "UnauthRoleArn": "arn:aws:iam::866236846393:role/amplify-amplifyapp-dev-121239-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::866236846393:role/amplify-amplifyapp-dev-121239-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-amplify-staging-223115-deployment",
-      "UnauthRoleName": "amplify-amplify-staging-223115-unauthRole",
-      "StackName": "amplify-amplify-staging-223115",
-      "StackId": "arn:aws:cloudformation:us-east-2:866236846393:stack/amplify-amplify-staging-223115/ce68eeb0-173d-11ec-bfac-061a66f2f7aa",
-      "AmplifyAppId": "d3ilx4g28vq9ad"
+      "DeploymentBucketName": "amplify-amplifyapp-dev-121239-deployment",
+      "UnauthRoleName": "amplify-amplifyapp-dev-121239-unauthRole",
+      "StackName": "amplify-amplifyapp-dev-121239",
+      "StackId": "arn:aws:cloudformation:us-east-2:866236846393:stack/amplify-amplifyapp-dev-121239/1781b430-17d2-11ec-af01-0ad5a3a5a986",
+      "AmplifyAppId": "d2abvdyjmzlww3"
+    }
+  },
+  "auth": {
+    "amplifyapp5e8078c0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "EMAIL",
+          "PREFERRED_USERNAME",
+          "PHONE_NUMBER"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      }
     }
   }
 }
